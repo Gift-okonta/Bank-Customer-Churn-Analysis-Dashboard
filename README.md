@@ -13,11 +13,10 @@
 - [Key Insights & Business Interpretation](#key-insights--business-interpretation)
 - [Recommendation](#recommendation)
 
----
 
 This project analyzes bank customer data to identify churn trends, high risk customer segments, behavioral drivers of attrition and retention opportunities, the goal is to support data driven customer retention strategies
 
----
+
 
 ## Project Overview
 
@@ -36,7 +35,6 @@ Who is most likely to churn — and why?
 
 The goal is to support data-driven customer retention strategies.
 
----
 
 ## Business Objectives
 
@@ -49,16 +47,12 @@ The dashboard answers key questions:
 - Do customers with more products churn less?  
 - Does tenure improve loyalty?  
 
----
-
 ## Tools Used
 
 - Power BI (Visualization & Modeling)  
 - DAX (KPI calculations)  
 - Power Query (Data cleaning & transformation)  
 - Excel / CSV (Dataset)  
-
----
 
 ## About the Dataset
 
@@ -77,8 +71,6 @@ The dataset used for this analysis contains information about bank customers, in
 - Product_number  
 - Churn status  
 
----
-
 ## Data Preparation
 
 - Removed duplicates  
@@ -86,8 +78,6 @@ The dataset used for this analysis contains information about bank customers, in
 - Corrected data types  
 - Cleaned categorical values  
 - Optimized fields for segmentation analysis  
-
----
 
 ## Data Standardization
 
@@ -102,8 +92,6 @@ To improve readability and business interpretation, coded values were standardiz
 
 This ensured the dataset was easy to understand for both technical and non-technical stakeholders.
 
----
-
 ## Data Formatting (Feature Engineering)
 
 New columns were created:
@@ -114,8 +102,6 @@ New columns were created:
 - Tenure Groups (2-year intervals)  
 
 These groupings allow meaningful comparison of churn behavior across segments.
-
----
 
 ## KPIs Measured
 
@@ -129,10 +115,8 @@ Users can filter by:
 
 - Gender  
 - Country  
-
 Enabling deeper exploration.
 
----
 
 ## Key Insights & Business Interpretation
 
@@ -172,7 +156,6 @@ Customers with balances between 1k–10k show the highest churn risk (100%), whi
 
 Churn decreases as account balance increases, with customers above 100k showing lower churn rates (23–26%). Customers with zero balances have the lowest churn rate (14%), likely representing dormant but retained accounts.
 
----
 
 ## RECOMMENDATION
 
