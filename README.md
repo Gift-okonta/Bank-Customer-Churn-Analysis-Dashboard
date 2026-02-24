@@ -109,14 +109,11 @@ These groupings allow meaningful comparison of churn behavior across segments.
 - Active Customers  
 - Inactive Customers  
 - Churn Rate  
-- Retention Rate  
+- Retention Rate
+## Technical Documentation
 
-Users can filter by:
-
-- Gender  
-- Country  
-Enabling deeper exploration.
-
+For detailed DAX logic and KPI calculations, see:  
+[DAX Measures Documentation](./DAX-Logic-Documentation.md) 
 
 ## Key Insights & Business Interpretation
 
