@@ -7,11 +7,12 @@
 - [Tools Used](#tools-used)
 - [About the Dataset](#about-the-dataset)
 - [Data Preparation](#data-preparation)
-- [Data Standardization](#data-standardization)
 - [Data Formatting (Feature Engineering)](#data-formatting-feature-engineering)
 - [KPIs Measured](#kpis-measured)
 - [Key Insights & Business Interpretation](#key-insights--business-interpretation)
 - [Recommendation](#recommendation)
+- [Conclusion](#conclusion)
+
 
 
 This project analyzes bank customer data to identify churn trends, high risk customer segments, behavioral drivers of attrition and retention opportunities, the goal is to support data driven customer retention strategies
@@ -20,7 +21,7 @@ This project analyzes bank customer data to identify churn trends, high risk cus
 
 ## Project Overview
 
-Customer churn is a major challenge in the banking industry. Losing customers reduces revenue, increases acquisition costs, and negatively impacts long-term profitability.
+Customer churn is a major challenge in the banking industry. Losing customers reduces revenue, increases acquisition costs, and negatively impacts long term profitability.
 
 This project analyzes bank customer data to identify:
 
@@ -31,9 +32,9 @@ This project analyzes bank customer data to identify:
 
 Using Power BI, DAX, and Power Query, I built an interactive dashboard that enables stakeholders to quickly answer:
 
-Who is most likely to churn — and why?
+Who is most likely to churn  and why?
 
-The goal is to support data-driven customer retention strategies.
+The goal is to support data driven customer retention strategies.
 
 
 ## Business Objectives
@@ -58,17 +59,17 @@ The dashboard answers key questions:
 
 The dataset used for this analysis contains information about bank customers, including demographic details, account activity, and churn status. Below are the key fields:
 
-- customer_id  
+- customer_id
+- Credit score  
 - Country  
 - Gender  
 - Age  
-- Tenure  
+- Tenure
+- Balance
+- Product_number   
 - Credit_card  
 - Active_member  
 - Estimated_salary  
-- Credit score  
-- Balance  
-- Product_number  
 - Churn status  
 
 ## Data Preparation
@@ -76,32 +77,16 @@ The dataset used for this analysis contains information about bank customers, in
 - Removed duplicates  
 - Renamed columns for clarity  
 - Corrected data types  
-- Cleaned categorical values  
-- Optimized fields for segmentation analysis  
-
-## Data Standardization
-
-To improve readability and business interpretation, coded values were standardized:
-
-| Before | After |
-|--------|--------|
-| M / F | Male / Female |
-| 0 / 1 (Credit Card) | Yes / No |
-| 0 / 1 (Activity Status) | Active / Inactive |
-| 0 / 1 (Churn) | Retained / Churned |
-
-This ensured the dataset was easy to understand for both technical and non-technical stakeholders.
+- To improve readability and business interpretation, coded values were standardized,this ensured the dataset was easily understood for both technical and non-technical stakeholders.
 
 ## Data Formatting (Feature Engineering)
 
-New columns were created:
+New columns were created to allow meaningful comparison of churn behavior across segments.
 
 - Credit Score Bands (300–400, 400–500, 500–600, 600–700, 700+)  
 - Age Groups (18–25, 26–35, 36–45, 46–55, 55+)  
 - Account Balance Groups (0, 1K–10K, 10K–50K, 50K–100K, 100K–150K, 150K+)  
 - Tenure Groups (2-year intervals)  
-
-These groupings allow meaningful comparison of churn behavior across segments.
 
 ## KPIs Measured
 
@@ -168,7 +153,8 @@ Conduct customer feedback analysis to identify service gaps and competitor advan
 
 Implement proactive engagement programs targeting inactive customers.
 
-Use automated reminders, personalized communication, and email to reduce inactivity  
+Use automated reminders, personalized communication, and email to reduce inactivity 
+
 Track inactivity as an early churn warning signal.
 
 ### Age Based Customer Strategies
@@ -203,15 +189,11 @@ Offer account reviews or personalized offers.
 
 ### Credit Risk Monitoring
 
-Recommendation:
-
 Closely monitor customers with very low credit scores.
 
 Provide financial education or flexible account support where possible
 
 ### Account Balance Based Retention Strategy
-
-Recommendation:
 
 Focus retention campaigns on customers with 1K–50K balances, as they represent the highest churn risk.
 
@@ -219,7 +201,17 @@ Monitor declining balances as an early churn indicator.
 
 Offer incentives that encourage balance growth
 
+## Conclusion
 
+This project demonstrates my ability to go beyond dashboard visualization and deliver actionable business intelligence.
+
+Using structured data preparation, feature engineering, and DAX modeling, I identified the key drivers of customer churn across
+
+demographic, behavioral, and financial dimensions. The analysis shows that churn is heavily influenced by customer inactivity, 
+
+age segment (46+), regional concentration (Germany), multi-product complexity (3–4 products), and mid-level
+
+account balances (1K–50K). Notably, tenure alone does not guarantee loyalty, highlighting the need for lifecycle based retention strategies.
 
 
 
