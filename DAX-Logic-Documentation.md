@@ -11,7 +11,7 @@ To support dynamic insights, several custom DAX measures were created.
 
 ```DAX
 Total Customers =
-COUNT(bank Customer Churn Prediction[customer_id])
+COUNT(bank Customer Churn [customer_id])
 ```
 
 ### Active Customers (Number of customers active)
@@ -19,7 +19,7 @@ COUNT(bank Customer Churn Prediction[customer_id])
 ```DAX
 Active Customers =
 CALCULATE(
-    COUNT(bank Customer Churn Prediction[customer_id]),
+    COUNT(bank Customer Churn [customer_id]),
     bank[activity_status] = "Active"
 )
 ```
@@ -29,12 +29,11 @@ CALCULATE(
 ```DAX
 Inactive Customers =
 CALCULATE(
-    COUNT(bank Customer Churn Prediction[customer_id]),
+    COUNT(bank Customer Churn [customer_id]),
     bank[activity_status] = "Inactive"
 )
 ```
 
----
 
 ## Churn Metrics
 
@@ -43,22 +42,21 @@ CALCULATE(
 ```DAX
 Customers Lost =
 CALCULATE(
-    COUNT(bank Customer Churn Prediction[customer_id]),
+    COUNT(bank Customer Churn[customer_id]),
     bank[churn] = "Churned"
 )
 ```
 
-### Retained Customers
+### Retained Customers 
 
 ```DAX
 Retained Customers =
 CALCULATE(
-    COUNT(bank[customer_id]),
+    COUNT(bank Customer Churn[customer_id]),
     bank[churn] = "Retained"
 )
 ```
 
----
 
 ## Performance Rates
 
